@@ -16,9 +16,13 @@ class PostBooksController < ApplicationController
   end
 
   def show
+    @post_book = PostBook.find(params[:id])
   end
 
   def edit
+  end
+
+  def destroy
   end
 
   private
