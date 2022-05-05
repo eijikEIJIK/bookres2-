@@ -3,7 +3,5 @@
 <hr>
 <%= render 'books/new', book_new: @book_new %>
 <hr>
-  <h3><%= @user.name %></h3>
-  <%= image_tag @user.get_profile_image %>
 </div>
 <%= render 'books/books', books: @user.books %>
