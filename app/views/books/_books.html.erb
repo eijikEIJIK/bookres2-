@@ -1,9 +1,25 @@
+<h2>Books</h2>
+<table>
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Option</th>
+  </tr>
 <% books.each do |book| %>
-<div>
-  <%= image_tag book.user.get_profile_image %>
-  <%= link_to book_path(book.id) do %>
-    <p>Title：<%= book.title %></p>
-  <% end %>
-  <p>Option：<%= book.body %></p>
-</div>
+  <tr>
+    <td>
+      <%= link_to user_path(book.user.id) do %>
+        <%= image_tag book.user.get_profile_image %>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to book_path(book.id) do %>
+        <p><%= book.title %></p>
+      <% end %>
+    </td>
+    <td>
+      <p><%= book.body %></p>
+    </td>
+  </tr>
 <% end %>
+</table>
