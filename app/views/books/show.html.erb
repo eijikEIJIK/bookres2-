@@ -24,10 +24,10 @@
         </td>
         <% if @book.user == current_user %>
         <td>
-          <%= link_to "編集", edit_book_path(@book.id) %>
+          <%= link_to "Edit", edit_book_path(@book.id),class: "btn btn-success" %>
         </td>
         <td>
-          <%= link_to "削除", book_path(@book), method: :delete %>
+          <%= link_to "Destroy", book_path(@book), method: :delete, class: "btn btn-danger" %>
         </td>
         <% end %>
       </tr>
