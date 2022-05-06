@@ -15,13 +15,15 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+
     if @user != current_user
-      redirect_to user_path(params[:id])
+      redirect_to user_path(current_user.id)
     end
   end
 
   def update
     @user = User.find(params[:id])
+
     if @user != current_user
       redirect_to user_path(params[:id])
     end
@@ -31,7 +33,6 @@ class UsersController < ApplicationController
     else
       render :edit
     end
-
   end
 
   private

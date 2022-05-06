@@ -1,3 +1,4 @@
+<div class="container">
 <%= render 'books/errors', error: @user %>
 <h2>User info</h2>
 <div class="form-group">
@@ -11,6 +12,7 @@
   <label for="inputIntroduction">Introduction</label>
   <%= f.text_area :introduction, class:"form-control", autofocus: true, id:"inputIntroduction", placeholder:"introduction"%>
   <br>
-  <%= f.submit "update User" ,class:"btn btn-secondary" %>
+  <%= f.submit "Update User" ,class:"btn btn-secondary" %>
 <% end %>
+</div>
 </div>

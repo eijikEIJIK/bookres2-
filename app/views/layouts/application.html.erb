@@ -58,7 +58,7 @@
             </li>
             <li class="nav-item">
               <%= link_to new_user_session_path do %>
-                <span class="nav-link"><i class="fas fa-sign-in-alt"></i>Sign in</span>
+                <span class="nav-link"><i class="fas fa-sign-in-alt"></i>Log in</span>
               <% end %>
             </li>
             <% end %>
@@ -68,9 +68,7 @@
       </nav>
     </header>
     <br>
-    <div class="container">
       <%= render 'layouts/success_message' %>
       <%= yield %>
-    </div>
   </body>
 </html>
