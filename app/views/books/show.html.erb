@@ -6,17 +6,17 @@
     </div>
   <div class="col-md-8">
     <h2>Book detail</h2>
-    <table>
+    <table class="table">
       <tr>
         <td>
           <%= link_to user_path(@book.id) do %>
             <%= image_tag @book.user.get_profile_image %><br>
             <%= @book.user.name %>
-          <% end %><br>
+          <% end %>
         </td>
         <td>
           <%= link_to book_path(@book.id) do %>
-            <p><%= @book.title %></p>
+            <%= @book.title %>
           <% end %>
         </td>
         <td>
