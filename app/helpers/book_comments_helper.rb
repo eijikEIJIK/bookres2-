@@ -1,2 +1,2 @@
-module BooksCommentsHelper
+module BookCommentsHelper
 end
